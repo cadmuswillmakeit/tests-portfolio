@@ -78,7 +78,7 @@ nav {
   
 .accueil {
     background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.4) ), center top / cover url("images/bord_de_mer.jpg") fixed;
-    height: 100;
+    height: 100%;
     padding: 15px 50px;
 }
 
@@ -92,6 +92,7 @@ nav {
 .ourProducts {
     background-color: white;
     padding: 80px;
+    height: auto;
 }
   
 .ourProducts h2 {
@@ -121,7 +122,7 @@ nav {
     display: grid;
     gap: 15px;
     grid-template-columns: 301px 301px 301px;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
     justify-content: center;
 }
 
@@ -159,7 +160,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    padding: 50px 50px;
+    padding: 50px;
 
 }
 
