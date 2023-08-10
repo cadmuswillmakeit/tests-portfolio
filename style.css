@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+      
+body {
+    background-color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.lien-video, .lesite  {
+    background-color: rgba(255,  255, 255, 0.2);
+    border: 0.5px solid #dad9dc;
+    border-radius: 3px;
+    color :white;
+    padding : 8px 24px;
+}
+
+.lien-video:hover,.lesite:hover {
+    box-shadow : 0 0 2px 0.5px #dad9dc;
+} 
+
+.lien-hypertexte:hover {
+    text-decoration: underline;
+}
+
+.lesite {
+    background-color: rgb(67, 67, 205);
+}
+
+.lesite:hover {
+    background-color:rgb(78, 78, 186);
+}
+
+.guide {
+    font-weight: bold;
+}
+section h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2em;
+}
+
+.login {
+    padding : 3px 18px;
+}
+.signup {
+    background-color: rgba(255,  255, 255, 0.3);
+    border: 0.5px solid #dad9dc;
+    border-radius: 3px;
+    padding : 3px 9px;
+} 
+
+.classHover:hover {
+    background-color: rgba(255,  255, 255, 0.4);
+}
+
+.class-a {
+    color:white ;
+    margin: 0 12px;   
+    text-decoration : none;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin : 25px 50px 50px 50px;
+  }
+  
+.accueil {
+    background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.4) ), center top / cover url("images/bord_de_mer.jpg") fixed;
+    height: 100;
+    padding: 15px 50px;
+}
+
+
+.introduction {
+    align-items:flex-start;
+    margin : 100px 50px;
+    width: 50%;
+}
+
+.ourProducts {
+    background-color: white;
+    padding: 80px;
+}
+  
+.ourProducts h2 {
+    color: #242424;
+}
+
+.intro-product {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.product {
+    display: block;
+    border : solid #dad9dc 0.5px;
+    border-bottom:solid  #dad9dc 2.5px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.product:hover {
+    box-shadow : 0 0 12px 2px #dad9dc;
+    text-decoration: none;
+}
+.conteneur {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 301px 301px 301px;
+    grid-template-rows: 400px 400px 400px;
+    justify-content: center;
+}
+
+.conteneur span {
+    padding: 0 4.5px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform : translateY(110%)
+}
+  
+.round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(67, 67, 205);
+    font: bold 1rem/25px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0.25turn);
+    padding-bottom : 2px;
+}
+
+.conteneur-footer {
+    color:#dad9dc;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 25px 50px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .accueil {
+        background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.4) ) / cover url("images/bord_de_mer.jpg") fixed center top;
+        padding: 3px 5px;
+        width : 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-start;
+        margin : 25px 25px 50px 25px;
+    }
+    
+    nav div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section h1 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.2em;
+    }   
+    
+    .liens {
+        display : flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px
+    }
+
+    .conteneur {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 301px;
+        grid-template-rows: 400px 400px 400px 400px 400px 400px;
+        justify-content:space-around;
+    }
+        
+    .introduction {
+        align-items: center;
+        font-size: 13px;
+        margin : 150px 50px;
+        width: 75%;
+    }
+    
+    .parent {
+        transform: translateY(62%);
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .accueil {
+        background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.4) ) / cover url("images/bord_de_mer.jpg") fixed center top;
+        padding: 3px 5px;
+        width : 100%;
+        height: auto;
+    }
+
+    .parent {
+        transform: translateY(58%);
+    }
+
+    .conteneur {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 301px 301px;
+        grid-template-rows: 400px 400px 400px 400px 400px 400px;
+        justify-content: center;
+    }
+    
+}
+
