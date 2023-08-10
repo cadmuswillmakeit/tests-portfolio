@@ -152,11 +152,14 @@ nav {
 }
 
 .conteneur-footer {
+    height : 100%;
     color:#dad9dc;
+    background-color: #217d71;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding: 25px 50px;
+    align-items: center;
+    justify-content:center;
+    padding: 50px 50px;
 
 }
 
